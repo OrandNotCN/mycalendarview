@@ -1,4 +1,4 @@
-package com.example.myproject;
+package com.lacuz.cherish;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

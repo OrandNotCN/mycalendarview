@@ -1,4 +1,4 @@
-package com.example.myproject;
+package com.lacuz.cherish;
 
 import org.junit.Test;
 
