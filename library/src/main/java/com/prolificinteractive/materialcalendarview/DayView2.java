@@ -126,6 +126,7 @@ class DayView2 extends LinearLayout {
     public String getLunarLable() {
         return new CalendarUtil().getChineseDay(date.getYear(),
                 date.getMonth() + 1, date.getDay());
+//        return CalendarUtil2.getLunarDay(date.getDate());
     }
 
     public void setSelectionColor(int color) {
