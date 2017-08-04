@@ -1,4 +1,4 @@
-package com.lacuz.cherish;
+package com.lacuz.cherish.utils;
 
 import android.os.Environment;
 import android.text.format.DateFormat;

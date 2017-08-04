@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <com.lacuz.cherish.view.CircleImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tangyan"/>
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ivPhoto"
+        android:textSize="15sp"
+        android:textColor="@color/base_black"
+        android:text="王者荣誉"/>
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ivPhoto"
+        android:layout_alignBottom="@id/ivPhoto"
+        android:textSize="13sp"
+        android:textColor="@color/base_grey"
+        android:text="广州"/>
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tvAddress"
+        android:layout_above="@id/tvAddress"
+        android:textSize="13sp"
+        android:textColor="@color/base_grey"
+        android:text="18826485391"/>
+    <TextView
+        android:id="@+id/tvBirth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tvPhone"
+        android:layout_above="@id/tvPhone"
+        android:textSize="13sp"
+        android:textColor="@color/base_grey"
+        android:text="20128065"/>
+
+</RelativeLayout>

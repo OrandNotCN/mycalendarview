@@ -92,4 +92,10 @@
     <color name="white_blue">#ffdcf6fe</color>
     <color name="widget_line_bg">#20a9a9d1</color>
     <color name="yellow">#ffaeb00e</color>
+
+
+
+    <color name="base_grey">#a1a1a1</color>
+    <color name="base_blue">#5d6af5</color>
+    <color name="base_black">#222222</color>
 </resources>

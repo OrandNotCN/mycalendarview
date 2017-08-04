@@ -2,8 +2,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/green_bg"
     android:orientation="vertical">
+
+    <com.lacuz.cherish.view.CustomTitlebar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        app:show_line="true"
+        app:title_background="@color/transparent"
+        app:left_button_image="@mipmap/icon_back_white"
+        app:title_text="新增"
+        app:title_textColor="@color/white"
+        app:title_textSize="18sp"
+        app:right_button_text="批量导入"/>
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -13,7 +27,7 @@
         android:padding="15.0dip">
 
         <EditText
-            android:id="@+id/annday_new_title"
+            android:id="@+id/etTitle"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="@null"
@@ -26,7 +40,7 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/annday_new_time_lay"
+        android:id="@+id/rlly_time"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10.0dip"
@@ -42,7 +56,7 @@
             android:textSize="15.0dip" />
 
         <TextView
-            android:id="@+id/annday_new_time_text"
+            android:id="@+id/tvSolarTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="70.0dip"
@@ -50,10 +64,10 @@
             android:textSize="14.0dip" />
 
         <TextView
-            android:id="@+id/annday_new_lunar_time_text"
+            android:id="@+id/tvLunarTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/annday_new_time_text"
+            android:layout_below="@id/tvSolarTime"
             android:layout_marginLeft="70.0dip"
             android:layout_marginTop="10.0dip"
             android:textColor="@color/textcolor_6"
@@ -91,7 +105,7 @@
             android:layout_marginTop="10.0dip">
 
             <CheckBox
-                android:id="@+id/annday_new_today_checkbox"
+                android:id="@+id/cbToday"
                 style="@style/my_checkbox_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -104,7 +118,7 @@
                 android:textSize="13.0dip" />
 
             <CheckBox
-                android:id="@+id/annday_new_oneday_checkbox"
+                android:id="@+id/cbOneDay"
                 style="@style/my_checkbox_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -116,7 +130,7 @@
                 android:textSize="13.0dip" />
 
             <CheckBox
-                android:id="@+id/annday_new_thrday_checkbox"
+                android:id="@+id/cbThreeDay"
                 style="@style/my_checkbox_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -128,7 +142,7 @@
                 android:textSize="13.0dip" />
 
             <CheckBox
-                android:id="@+id/annday_new_oneweek_checkbox"
+                android:id="@+id/cbSevenDay"
                 style="@style/my_checkbox_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -143,11 +157,22 @@
 
     <TextView
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="1.0dip"
         android:background="@color/white"
         android:padding="15.0dip"
         android:text="@string/anndays_new_notice"
+        android:textColor="@color/textcolor_6"
+        android:textSize="14.0dip" />
+    <TextView
+        android:id="@+id/tvSave"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100.0dip"
+        android:gravity="center"
+        android:background="@color/white"
+        android:padding="15.0dip"
+        android:text="保存"
         android:textColor="@color/textcolor_6"
         android:textSize="14.0dip" />
 </LinearLayout>
